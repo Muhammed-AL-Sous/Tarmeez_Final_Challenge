@@ -1,0 +1,202 @@
+.bg-gray-100 {
+  background-color: var(--bs-gray-100);
+}
+
+#alert {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 25%;
+}
+
+#add-btn {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  z-index: 99999;
+  bottom: 20px;
+  left: 60px;
+  border-radius: 50%;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  line-height: 55px;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+}
+
+#add-btn:hover {
+  background-color: gray !important;
+}
+
+#username-nav {
+  border-left: 3px solid gray;
+  padding-left: 5px;
+  margin-right: 5px;
+}
+
+#img-nav,
+#img-comment {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid gray;
+}
+
+#post-body-input {
+  height: 150px;
+  resize: none;
+}
+
+#comments {
+  background-color: rgb(128 128 128 / 30%);
+}
+
+#comment {
+  padding-top: 5px;
+  font-size: 13px !important;
+  line-height: 1.8;
+  color: #444;
+}
+
+.posts-info,
+.comments-info {
+  color: rgb(172 172 172);
+  font-weight: 100;
+}
+
+.posts-info > span,
+.comments-info > span {
+  color: black;
+  font-size: 50px;
+}
+
+a {
+  cursor: pointer;
+}
+/* =================================================================== */
+
+/* Start Loader Styles */
+
+.loader {
+  background-color: rgb(172 172 172 / 70%);
+  position: fixed;
+  border-radius: 6px;
+  /* left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px; */
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  z-index: 99999;
+}
+
+.lds-roller,
+.lds-roller div,
+.lds-roller div:after {
+  box-sizing: border-box;
+}
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7.2px;
+  height: 7.2px;
+  border-radius: 50%;
+  background: currentColor;
+  margin: -3.6px 0 0 -3.6px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 62.62742px;
+  left: 62.62742px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 67.71281px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 70.90963px;
+  left: 48.28221px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 70.90963px;
+  left: 31.71779px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 67.71281px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 62.62742px;
+  left: 17.37258px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12.28719px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* End Loader Styles */
+
+/* =================================================================== */
