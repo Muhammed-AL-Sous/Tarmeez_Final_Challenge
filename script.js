@@ -618,11 +618,17 @@ function setupUI() {
   let logoutDiv = document.querySelector(".logout");
   let token = window.localStorage.getItem("token");
   let addButton = document.getElementById("add-btn");
+  let addCommentDiv = document.getElementById("main-comment-div");
 
   if (token == null) {
     // The User Is Not Logged In
     loginRegisterDiv.style.setProperty("display", "block", "important");
     logoutDiv.style.setProperty("display", "none", "important");
+    
+     // The Add Comment Is Not Defined On Other Pages So We Need To Make This Condition
+  if (addCommentDiv != null) {
+      addCommentDiv.style.setProperty("display", "none", "important");
+    }
 
     // The Add Button Is Not Defined On Other Pages So We Need To Make This Condition
     if (addButton != null) {
@@ -632,6 +638,11 @@ function setupUI() {
     // The User Is Logged In
     loginRegisterDiv.style.setProperty("display", "none", "important");
     logoutDiv.style.setProperty("display", "flex", "important");
+    
+    // The Add Comment Is Not Defined On Other Pages So We Need To Make This Condition
+   if (addCommentDiv != null) {
+      addCommentDiv.style.setProperty("display", "block", "important");
+    }
 
     // The Add Button Is Not Defined On Other Pages So We Need To Make This Condition
     if (addButton != null) {
