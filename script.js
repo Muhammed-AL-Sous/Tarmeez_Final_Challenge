@@ -424,7 +424,7 @@ function getPost() {
               <div>
               ${commentsContent}
               </div>
-                <div class="input-comment d-flex mt-2">
+                <div class="input-comment d-flex mt-2" id="main-comment-div">
                     <input type="text" id="comment-input" class="form-control" placeholder="Add Your Comment Here...">
                     <button type="button" class="btn btn-outline-primary mx-2" id="add-comment" onclick="createCommentClicked()">Send</button>
                 </div>
@@ -433,7 +433,7 @@ function getPost() {
       </div>
       `;
       document.querySelector(".post").innerHTML = postContent;
-      setupUI()
+      setupUI();
     })
     .catch((error) => {
       const errorMessage = error.response.data.message;
