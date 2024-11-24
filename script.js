@@ -433,6 +433,7 @@ function getPost() {
       </div>
       `;
       document.querySelector(".post").innerHTML = postContent;
+      setupUI()
     })
     .catch((error) => {
       const errorMessage = error.response.data.message;
